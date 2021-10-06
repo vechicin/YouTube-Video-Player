@@ -1,0 +1,33 @@
+#nav-bar{
+	background-color: pink;
+	display: flex;
+}
+
+#video-player{
+	background-color: rosybrown;
+}
+
+#video-title{
+	background-color: greenyellow;
+}
+
+#video-description{
+	background-color: blueviolet;
+}
+
+#thumbnails{
+	background-color: darkred;
+}
+
+#sign-in{
+	margin-left: 75%;
+}
+
+#search{
+	max-width: 100%;
+	text-align: center;
+	display: block;
+	margin-left: 21.3%;
+	position: relative;
+	text-align: inherit;
+}
