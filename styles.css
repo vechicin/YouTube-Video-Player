@@ -1,29 +1,42 @@
-#nav-bar{
-	background-color: pink;
+.navbar {
 	display: flex;
 }
 
-#video-player{
+.hamburger {
+	background-color: #212121;
+	color: white;
+	border: none;
+}
+
+.yt-icon {
+	font-family: 'Roboto'sans-serif;
+}
+
+.yt-title {
+	font-family: 'Roboto'sans-serif;
+}
+
+#video-player {
 	background-color: rosybrown;
 }
 
-#video-title{
+#video-title {
 	background-color: greenyellow;
 }
 
-#video-description{
+#video-description {
 	background-color: blueviolet;
 }
 
-#thumbnails{
+#thumbnails {
 	background-color: darkred;
 }
 
-#sign-in{
+#sign-in {
 	margin-left: 75%;
 }
 
-#search{
+#search {
 	max-width: 100%;
 	text-align: center;
 	display: block;

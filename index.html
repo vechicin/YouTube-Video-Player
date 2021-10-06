@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title></title>
 	<script src="https://kit.fontawesome.com/11bb635b00.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div id="nav-bar">
-	<div id="hamburger"></div>
-	<div id="logo">
-		<i class="fab fa-youtube"></i>
-		<p id="title">YouTube</p>
+	<header class="navbar">
+		<button class="hamburger">
+			<i class="fas fa-bars"></i>
+		</button>
+		<button class="yt-icon">
+			<i class="fab fa-youtube"></i>
+			<h1 class="yt-title">YouTube</h1>
+		</button>
+		<div class="searchbar">
+			<input type="text" class="search-input" placeholder="Search">
+		</div>
+		<div class="user-options">
+
+		</div>
+	</header>
+	<div id="video-player">
+		<div id="video-screen">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wZDk94l57h8"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<div id="video-title">How I Went from College Professor to Deli Worker
+			<p id="views">159,854 views</p>
+			<p id="went-live">Went live on September 25th 2021</p>
+		</div>
+		<div id="video-description">On today’s live stream I discuss my journey that took me from being a College
+			Professor to Deli Worker.
+			<div id="channel-name">Rick Beato
+				<p id="subscribers">2.58 M subscribers</p>
+				<div id="subscribe-button">
+					<button id="actual-button">Subscribe</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<input id="search" type="text" name="search-query" placeholder="Search">
-	<button id="search-icon" aria-label="Search">
-		<i class="fas fa-search"></i>
-	</button>
-	<button id="sign-in">
-		<a href="#" class="myButton">facebook</a>
-	</button>
-</div>
-<div id="video-player">
-	<div id="video-screen">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/wZDk94l57h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div id="thumbnails">
+		<div id="thumbnail-one">
+			<p>Thumbnail Title</p>
+		</div>
+		<div id="thumbnail-two">
+			<p>Thumbnail Title</p>
+		</div>
+		<div id="thumbnail-three">
+			<p>Thumbnail Title</p>
+		</div>
+		<div id="thumbnail-four">
+			<p>Thumbnail Title</p>
+		</div>
+		<div id="thumbnail-five">
+			<p>Thumbnail Title</p>
+		</div>
 	</div>
-	<div id="video-title">How I Went from College Professor to Deli Worker
-		<p id="views">159,854 views</p>
-		<p id="went-live">Went live on September 25th 2021</p>
-	</div>
-	<div id="video-description">On today’s live stream I discuss my journey that took me from being a College Professor to Deli Worker.
-	<div id="channel-name">Rick Beato
-		<p id="subscribers">2.58 M subscribers</p>
-	<div id="subscribe-button">
-		<button id="actual-button">Subscribe</button>
-	</div>
-	</div> 
-</div>
-</div>
-<div id="thumbnails">
-	<div id="thumbnail-one">
-		<p>Thumbnail Title</p>
-	</div>
-	<div id="thumbnail-two">
-		<p>Thumbnail Title</p>
-	</div>
-	<div id="thumbnail-three">
-		<p>Thumbnail Title</p>
-	</div>
-	<div id="thumbnail-four">
-		<p>Thumbnail Title</p>
-	</div>
-	<div id="thumbnail-five">
-		<p>Thumbnail Title</p>
-	</div>
-</div>
 </body>
+
 </html>
