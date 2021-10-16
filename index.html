@@ -3,11 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>YouTube Video Player</title>
 	<script src="https://kit.fontawesome.com/11bb635b00.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -42,26 +43,26 @@
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
-				<h2>How I Went from College Professor to Deli Worker</h2>
+				<h2 id="video-title">How I Went from College Professor to Deli Worker</h2>
 				<div id="video-info">
 					<div class="likes" id="views">
-						<p>211,665 views</p>
+						<p id="number-views">211,665 views</p>
 					</div>
 					<div class="likes">
 						<i class="far fa-thumbs-up"></i>
-						<p>12,568</p>
+						<p id="number-likes">12,568</p>
 					</div>
 					<div class="likes">
 						<i class="far fa-thumbs-down"></i>
-						<p>138</p>
+						<p id="number-dislikes">138</p>
 					</div>
 					<div class="likes">
 						<i class="fas fa-share"></i>
-						<p>SHARE</p>
+						<p id="share">SHARE</p>
 					</div>
 					<div class="likes">
 						<i class="fas fa-list"></i>
-						<p>SAVE</p>
+						<p id="save">SAVE</p>
 					</div>
 					<div class="likes">
 						<i class="fas fa-ellipsis-h"></i>
@@ -81,7 +82,7 @@
 							</div>
 						</div>
 						<div id="subscribe-button">
-							<p id="button">SUBSCRIBE</p>
+							<button id="button">SUBSCRIBE</button>
 						</div>
 					</div>
 					<div id="video-description">
