@@ -11,59 +11,226 @@
 </head>
 
 <body>
-	<header class="navbar">
-		<button class="hamburger">
-			<i class="fas fa-bars"></i>
-		</button>
-		<button class="yt-icon">
-			<i class="fab fa-youtube"></i>
-			<h1 class="yt-title">YouTube</h1>
-		</button>
-		<div class="searchbar">
-			<input type="text" class="search-input" placeholder="Search">
-		</div>
-		<div class="user-options">
-
-		</div>
-	</header>
-	<div id="video-player">
-		<div id="video-screen">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/wZDk94l57h8"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		</div>
-		<div id="video-title">How I Went from College Professor to Deli Worker
-			<p id="views">159,854 views</p>
-			<p id="went-live">Went live on September 25th 2021</p>
-		</div>
-		<div id="video-description">On today’s live stream I discuss my journey that took me from being a College
-			Professor to Deli Worker.
-			<div id="channel-name">Rick Beato
-				<p id="subscribers">2.58 M subscribers</p>
-				<div id="subscribe-button">
-					<button id="actual-button">Subscribe</button>
-				</div>
+	<section id="navbar">
+		<div id="hamburger-button">
+			<button class="hamburger">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div id="icon">
+				<button class="yt-icon">
+					<i class="fab fa-youtube" style="color: red;"></i>
+					<p>YouTube</p>
+				</button>
 			</div>
 		</div>
-	</div>
-	<div id="thumbnails">
-		<div id="thumbnail-one">
-			<p>Thumbnail Title</p>
+		<div id="searchbar">
+			<div id="search-box">
+				<input type="text" placeholder="Search">
+			</div>
+			<div id="search-button">
+				<i class="fas fa-search"></i>
+			</div>
+			<div id="google-account">
+				<i class="fas fa-sign-in-alt">Sign In</i>
+			</div>
 		</div>
-		<div id="thumbnail-two">
-			<p>Thumbnail Title</p>
-		</div>
-		<div id="thumbnail-three">
-			<p>Thumbnail Title</p>
-		</div>
-		<div id="thumbnail-four">
-			<p>Thumbnail Title</p>
-		</div>
-		<div id="thumbnail-five">
-			<p>Thumbnail Title</p>
-		</div>
-	</div>
+	</section>
+	<section id="video-container">
+		<section id="video-space">
+			<section id="video-window">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wZDk94l57h8"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<h2>How I Went from College Professor to Deli Worker</h2>
+				<div id="video-info">
+					<div class="likes" id="views">
+						<p>211,665 views</p>
+					</div>
+					<div class="likes">
+						<i class="far fa-thumbs-up"></i>
+						<p>12,568</p>
+					</div>
+					<div class="likes">
+						<i class="far fa-thumbs-down"></i>
+						<p>138</p>
+					</div>
+					<div class="likes">
+						<i class="fas fa-share"></i>
+						<p>SHARE</p>
+					</div>
+					<div class="likes">
+						<i class="fas fa-list"></i>
+						<p>SAVE</p>
+					</div>
+					<div class="likes">
+						<i class="fas fa-ellipsis-h"></i>
+					</div>
+				</div>
+				<div id="description-container">
+					<div id="first-part">
+						<div id="channel">
+							<div id="user-image-container">
+								<img id="user-image"
+									src="https://yt3.ggpht.com/ytc/AKedOLT6ck5p3kvuEMSLqzf9aviTcwthTLwoSZnjuJAvhw=s176-c-k-c0x00ffffff-no-rj"
+									alt="This should be a Rick Beato image">
+							</div>
+							<div id="channel-info-container">
+								<p id="user-name">Rick Beato</p>
+								<p id="subscribers">2.59 M subscribers</p>
+							</div>
+						</div>
+						<div id="subscribe-button">
+							<p id="button">SUBSCRIBE</p>
+						</div>
+					</div>
+					<div id="video-description">
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+			</section>
+			<section id="comment-section">
+				<div id="comments-first-part">
+					<p id="number-of-comments">1,746 comments</p>
+					<div id="order-comments">
+						<i class="fas fa-sort-amount-down"></i>
+						<p id="order-comments-by">ORDER BY</p>
+					</div>
+				</div>
+				<div id="comments-second-part">
+					<img id="comment-section-img"
+						src="https://yt3.ggpht.com/ytc/AKedOLT6ck5p3kvuEMSLqzf9aviTcwthTLwoSZnjuJAvhw=s176-c-k-c0x00ffffff-no-rj"
+						alt="This should be a Rick Beato image">
+					<div id="comment-input-container">
+						<input id="comment-input" type="text" placeholder="Add a public comment...">
+					</div>
+				</div>
+				<div id="comment">
+					<div class="comment-container">
+						<img id="comment-img"
+							src="https://yt3.ggpht.com/yti/APfAmoG6vx3aoJ9HXjlLcgwnzbT8xvF4f2nE4GT9IBVi=s88-c-k-c0x00ffffff-no-rj"
+							alt="This should be an user icon">
+					</div>
+					<div class="comment-info-container">
+						<div class="comment-first-part">
+							<p class="user-name">Santiago Velosa</p>
+							<p class="comment-time">A day ago</p>
+						</div>
+						<p class="actual-comment">This is a very inspiring story, thank you so much for sharing, Rick!
+						</p>
+						<div class="comment-interaction">
+							<div class="likes">
+								<i class="far fa-thumbs-up"></i>
+								<p>648</p>
+							</div>
+							<div class="comment-response">
+								<i class="far fa-thumbs-down"></i>
+								<p>REPLY</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section id="thumbnails">
+			<div id="thumbnail-container">
+				<ul>
+					<li class="mini-container">
+						<div class="thumbnail-video-container">
+							<a href="https://www.youtube.com/watch?v=O_LVl8w4-vw" target="_blank">
+								<img id="img"
+									src="https://i.ytimg.com/an_webp/O_LVl8w4-vw/mqdefault_6s.webp?du=3000&sqp=CPTpq4sG&rs=AOn4CLDGr1zzvlqIiI6H7YJ-o3tMYUtmSA"
+									alt="This should be a thumbnail image"></a>
+							<div class="description-container">
+								<p class="thumbnail-title">The Future of This Channel</p>
+								<p class="thumbnail-description">
+									Rick Beato
+									<br>
+									511,370 views
+									<br>
+									A month ago
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mini-container">
+						<div class="thumbnail-video-container">
+							<a href="https://www.youtube.com/watch?v=NaqySto4bKI" target="_blank">
+								<img id="img"
+									src="https://i.ytimg.com/an_webp/NaqySto4bKI/mqdefault_6s.webp?du=3000&sqp=CMqXrIsG&rs=AOn4CLArcSYGrOHfxlGwL8mn03xl_FKf_A"
+									alt="This should be a thumbnail image"></a>
+							<div class="description-container">
+								<p class="thumbnail-title">How I Sold 1,000,000 Records</p>
+								<p class="thumbnail-description">
+									Rick Beato
+									<br>
+									369,725 views
+									<br>
+									two months ago
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mini-container">
+						<div class="thumbnail-video-container">
+							<a href="https://www.youtube.com/watch?v=k2vqJ78VA4g" target="_blank">
+								<img id="img"
+									src="https://i.ytimg.com/an_webp/k2vqJ78VA4g/mqdefault_6s.webp?du=3000&sqp=COiOrIsG&rs=AOn4CLBSyTdE6kqQ_fssYjfPPcvNj4oy6g"
+									alt="This should be a thumbnail image"></a>
+							<div class="description-container">
+								<p class="thumbnail-title">The Ron Carter Interview</p>
+								<p class="thumbnail-description">
+									Rick Beato
+									<br>
+									231,778 views
+									<br>
+									two months ago
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mini-container">
+						<div class="thumbnail-video-container">
+							<a href="https://www.youtube.com/watch?v=mgkvU5eCaYo" target="_blank">
+								<img id="img"
+									src="https://i.ytimg.com/an_webp/mgkvU5eCaYo/mqdefault_6s.webp?du=3000&sqp=COSOrIsG&rs=AOn4CLB3spOKe_IrLJct4TjOalEdWSpUSw"
+									alt="This should be a thumbnail image"></a>
+							<div class="description-container">
+								<p class="thumbnail-title">Brian May Interview - Queen's Songs, Stories and Guitar Style
+								</p>
+								<p class="thumbnail-description">
+									Rick Beato 2
+									<br>
+									258,474 views
+									<br>
+									three weeks ago
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="mini-container">
+						<div class="thumbnail-video-container">
+							<a href="https://www.youtube.com/watch?v=qFVpSjRUD2E" target="_blank">
+								<img id="img"
+									src="https://i.ytimg.com/an_webp/qFVpSjRUD2E/mqdefault_6s.webp?du=3000&sqp=CPqirIsG&rs=AOn4CLBhXEbEwNku_oVO-xnWTtgjBh-IYw"
+									alt="This should be a thumbnail image"></a>
+							<div class="description-container">
+								<p class="thumbnail-title">What Makes This Song Great? Ep.108 CHICAGO</p>
+								<p class="thumbnail-description">
+									Rick Beato
+									<br>
+									202,703 views
+									<br>
+									a day ago
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</section>
 </body>
 
 </html>
